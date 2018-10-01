@@ -42,10 +42,6 @@ for i in range(len(y_train)):
     sum_y = sum_y + y_train[i]
 pi = sum_y/len(y_train) 
 
-
-# In[50]:
-
-
 theta_t = theta.T
 # plt.figure
 # plt.subplot(211)
@@ -72,7 +68,6 @@ plt.setp(baseline, 'color', 'black', 'linewidth', 2)
 plt.legend(["Class y=0", "Class y=1"], loc='best', numpoints=2)
 plt.title("Bernoulli Parameters [y = 0(Blue), y = 1(Red)]")
 plt.show()
-
 
 def bayes_classifier(x, y, theta_y, pi):
     y_pre =  range(len(y))
@@ -105,9 +100,10 @@ def accuracy(y_pre, y_test):
     a = float(len(y_pre))
     acc = count/a
     return acc
+
 y_pre = bayes_classifier(x_test, y_test, theta, pi) 
 acc = accuracy(y_pre,y_test)
-print acc
+#print acc
 count1 = count2 = count3 = count4 = 0
 for i in range(len(y_pre)):
     if y_pre[i] ==0 and y_test[i] == 0:
@@ -118,6 +114,7 @@ for i in range(len(y_pre)):
         count3 += 1
     if y_pre[i] ==1 and y_test[i] == 1:
         count4 += 1
+        
 print count1
 print count2
 print count3
@@ -142,10 +139,8 @@ def normalization(A):
             A[i][k] = (A[i][k] - c)/e
     return A
             
-
 x_train_n = normalization(x_train)
 x_test_n = normalization(x_test)
-
 print x_test_n[1][54]
 
 def KNN(x_test, x_train):    
@@ -161,7 +156,6 @@ dis = random.random(size=(len(x_test),len(x_train)))
 dis = KNN(x_test_n, x_train_n)
 b = np.argsort(dis[5])[:20]
 print b
-
 
 def knnpre(k, dis, y_train):
     data = []
@@ -210,7 +204,6 @@ def acck(k, dis, y_train, y_test):
     return acc
 
 acc = acck(20, dis, y_train, y_test)
-
 fig = plt.figure()
 plt.plot(range(1, 21),acc)
 ax.set_title(u"KNN")
