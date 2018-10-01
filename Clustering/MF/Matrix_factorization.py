@@ -1,6 +1,4 @@
-
 # coding: utf-8
-
 import math
 from numpy import *
 import numpy as np
