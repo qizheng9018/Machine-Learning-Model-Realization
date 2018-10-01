@@ -1,1 +1,6 @@
-implemention of MF
+Implemention of Matrix Factorization, Observed the joint likelihood and get the
+final value of training objective function and the RMSE based on testing set.
+
+Find out the ten nearest movies of the objective movies according to the algorithm.
+
+ 
