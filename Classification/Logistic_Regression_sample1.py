@@ -91,7 +91,6 @@ def update(w, t, y_train, x_train):
     
 L = update(w, 10, y_train, x_train1)    
 
-
 fig = plt.figure()
 ax = fig.add_subplot(111)
 plt.plot(L)
@@ -100,7 +99,3 @@ plt.xlabel('k')
 plt.ylabel('likelihood')
 plt.legend()
 plt.show()
-
-
-
-
