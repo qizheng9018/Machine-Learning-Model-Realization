@@ -1,4 +1,3 @@
-
 # coding: utf-8
 
 import math
@@ -61,7 +60,6 @@ def K_means(K, x, t):
                 u[k] = uk[k+1]/nk[k+1]
     return of, c
 
-
 l = np.zeros((4, 20))
 c = np.zeros((4, 500))
 for i in range(2, 6):
@@ -74,7 +72,6 @@ c3 = c[1]-1
 c5 = c[3]-1
 # print c3
 # print c5
-
 
 fig = plt.figure()
 plt.plot(range(2, 21), l[0][1:], label = "K=2")
@@ -115,7 +112,6 @@ plt.legend()
 plt.show()
 
 print type(c3[1])
-
 px=[]
 py=[]
 for i in range(len(x)):
