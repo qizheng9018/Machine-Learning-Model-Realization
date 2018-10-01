@@ -1,1 +1,3 @@
 Implemention of Non-negative Matrix Factorization.
+Observe the value change of Objective function and get Top 10 words with the highest appearance fluency 
+in 25 topics.
