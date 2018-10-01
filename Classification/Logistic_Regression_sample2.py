@@ -110,10 +110,10 @@ plt.ylabel('likelihood')
 plt.legend()
 plt.show()
 
-
 x_test = np.loadtxt(open("/Users/zhengqi/Downloads/machine-learning/hw2/hw2-data/X_test.csv","rb"),delimiter=",",skiprows=0)
 y_test = np.loadtxt(open("/Users/zhengqi/Downloads/machine-learning/hw2/hw2-data/y_test.csv","rb"),delimiter=",",skiprows=0)
 x_test1 =  random.random(size=(93,58))
+
 for i in range(93):
     for j in range(58):
         if j == 57:
@@ -129,8 +129,8 @@ for i in range(93):
         count += 1
     if y < 0 and y_test[i]==0:
         count += 1
+        
 acc = float(0)
 count = float(count)
 acc = count/93
 print acc
-
