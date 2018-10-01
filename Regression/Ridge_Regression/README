@@ -1,0 +1,2 @@
+Here is the implemention of Ridge regerssion. 
+I analyzed its performance with RMSE and implement a pth-order polynomial regression model for p = 1; 2; 3.
