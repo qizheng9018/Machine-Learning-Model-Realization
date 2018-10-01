@@ -1,4 +1,3 @@
-
 # coding: utf-8
 import math
 import sys
@@ -63,30 +62,6 @@ def D(w, h, x, t):
         
         obj = -np.sum(np.add(x*np.log(m), -m))
         listo.append(obj)
-    #         for i in range(3012):
-    #             for k in range(25):
-    #                 sum1 = 0
-    #                 for j in range(8447):
-    #                     if m[i][j] == 0:
-    #                         m[i][j] = 10**(-16)
-    #                     sum1 += h[k][j]*x[i][j]/m[i][j]
-    #                 sum2 = np.sum(h[k])
-    #                 if sum2 == 0:
-    #                     sum2 = 10**(-16)
-    #                 w[i][k] = w[i][k]*sum1/sum2
-    #         count += 1
-    #         print count
-    #         for k in range(25):
-    #             for j in range(8447):
-    #                 sum1 = 0
-    #                 for i in range(3012):
-    #                     if m[i][j] == 0:
-    #                         m[i][j] = 10**(-16)
-    #                     sum1 += w[i][k]*x[i][j]/m[i][j]
-    #                 sum2 = np.sum(w[:,k])
-    #                 if sum2 == 0:
-    #                     sum2 = 10**(-16)
-    #                 h[k][j] = h[k][j]*sum1/sum2
     return listo, w, h
 
 listob, wf, hf = D(w, h, x, 101)
