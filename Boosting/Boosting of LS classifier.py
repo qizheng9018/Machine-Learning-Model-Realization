@@ -11,6 +11,7 @@ x_test = np.loadtxt(open("/Users/zhengqi/Downloads/machine-learning/hw3/hw3-data
 y_test = np.loadtxt(open("/Users/zhengqi/Downloads/machine-learning/hw3/hw3-data/boosting/y_test.csv","rb"),delimiter=",",skiprows=0)
 x_train1 = np.zeros((len(x_train), 6))
 x_test1 = np.zeros((len(x_test), 6))
+
 for i in range(len(x_train)):
     for j in range(5):
         x_train1[i][j] = x_train[i][j]
