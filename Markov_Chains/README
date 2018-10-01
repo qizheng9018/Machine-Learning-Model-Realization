@@ -1,0 +1,6 @@
+Rank 763 college football teams based on the scores of every game in the 2017 season. 
+The data provided in CFB2017 scores.csv contains the result of one game on each line in the format
+Team A index, Team A points, Team B index, Team B points.
+If Team A has more points than Team B, then Team A wins, and vice versa. The index of a team refers
+to the row of “TeamNames.txt” where that team’s name can be found.
+Construct a 763*763 random walk matrix M on the college football teams. 
